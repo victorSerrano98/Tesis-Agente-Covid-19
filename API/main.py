@@ -8,9 +8,8 @@ from haystack.pipeline import ExtractiveQAPipeline
 from haystack.reader.farm import FARMReader
 from haystack.retriever.sparse import ElasticsearchRetriever
 
-#ELASTIC_SEARCH_HOST =  os.environ.get('es_ip', 'elasticsearch.eastus.azurecontainer.io')
-ELASTIC_SEARCH_HOST =  os.environ.get('es_ip', '34.135.163.252')
-#ELASTIC_SEARCH_HOST =  os.environ.get('es_ip', 'localhost')
+ELASTIC_SEARCH_HOST =  os.environ.get('es_ip', 'localhost')
+#ELASTIC_SEARCH_HOST =  os.environ.get('es_ip', '34.135.163.252')
 ELASTIC_SEARCH_PORT =  os.environ.get('es_port', 9200)
 
 document_store = ElasticsearchDocumentStore(host=ELASTIC_SEARCH_HOST,
